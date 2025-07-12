@@ -1,0 +1,155 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+
+# Build outputs
+build/
+dist/
+out/
+lib/
+
+# Logs
+logs
+*.log
+
+# Google Cloud Platform
+.gcloudignore
+gcp-key.json
+service-account.json
+*.key.json
+.google-cloud/
+
+# Google Cloud Functions
+.gcp_build/
+.google_cloud_build/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+firebase-functions.log
+
+# Cloud Functions Framework
+functions-framework-*.log
+
+# PDF processing temp files
+temp-pdfs/
+temp-documents/
+uploads/
+downloads/
+
+# Vector embeddings cache
+embeddings-cache/
+vectors-temp/
+
+# Processing artifacts
+chunks/
+processed/
+failed/
+
+# Testing
+coverage/
+.nyc_output
+test-documents/
+test-pdfs/
+
+# Monitoring
+metrics/
+traces/
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Cloud deployment
+.deploy/
+deployment/
+
+# Secrets and credentials
+secrets/
+credentials/
+keys/
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# AI/ML specific
+models/
+training-data/
+checkpoints/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Package managers
+.pnpm-store/
+.yarn/
+.npm/
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Performance profiling
+profile/
+benchmarks/
+
+# Temporary processing files
+processing-queue/
+retry-queue/
+dead-letter-queue/
