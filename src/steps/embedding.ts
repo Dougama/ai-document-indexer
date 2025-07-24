@@ -15,21 +15,21 @@ const OVERLAP_SIZE = 300; // Caracteres de superposición entre chunks
 const MAX_ITEMS_PER_BATCH = 100;
 
 // Configuración del proyecto
-const PROJECT_ID = "614117709322";
 const LOCATION = "us-central1";
 const FIRESTORE_COLLECTION = "pdf_documents_vector";
 import { GoogleGenAI } from "@google/genai";
 
-// Inicializar Firestore
-const db = new Firestore({
-  projectId: "backend-developer-446300",
-});
+// Inicializar Firestore (usa credenciales por defecto)
+const db = new Firestore();
 
-// Inicializar GoogleGenAI
+// Inicializar GoogleGenAI con proyecto explícito
+const PROJECT_ID = "bavaria-412804";
+console.log(`🔧 Configurando GoogleGenAI con proyecto: ${PROJECT_ID}`);
+
 const ai = new GoogleGenAI({
   vertexai: true,
   project: PROJECT_ID,
-  location: LOCATION || "us-central1",
+  location: LOCATION,
 });
 /**
  * Divide el texto en chunks con técnica de superposición (overlap)
